@@ -19,6 +19,7 @@ url = 'http://www.com/bbs/'
 #神特么设置UA会有问题 处理不好  选择狗带 放弃  
 cookie = cookielib.MozillaCookieJar()
 cookie.load('cookie.txt', ignore_discard=True, ignore_expires=True)
+#cookies存放在一个txt里  目前貌似不需要担心cookies失效问题
 #req = urllib2.Request(url, headers)
 #上面说了  我就是死外面 从这跳下去  也不会设置UA
 req = urllib2.Request(url)
